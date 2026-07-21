@@ -46,7 +46,7 @@ source venv/bin/activate
 
 # En Windows (PowerShell):
 python -m venv venv
-.\venv\Scripts\Activate.ps1
+venv\Scripts\activate
 
 # Instalar dependencias dentro del venv
 pip install -r requirements.txt
