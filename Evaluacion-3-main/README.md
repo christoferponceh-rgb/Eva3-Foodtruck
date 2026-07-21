@@ -21,7 +21,7 @@ SPA desarrollada para la gestión de menú y pedidos de un Food Truck.
 │   │   └── PedidosCRUD.jsx
 │   ├── App.jsx
 │   ├── main.jsx
-│   └── index.css
+│   │   └── index.css
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -39,7 +39,19 @@ npm install
 ### 2. Ejecutar la API (Python Backend)
 ```bash
 cd src/api
+# Crear y activar un entorno virtual (venv) recomendado
+# En macOS / Linux:
+python3 -m venv venv
+source venv/bin/activate
+
+# En Windows (PowerShell):
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+# Instalar dependencias dentro del venv
 pip install -r requirements.txt
+
+# Ejecutar la API
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
